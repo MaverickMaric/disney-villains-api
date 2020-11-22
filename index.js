@@ -8,7 +8,7 @@ app.get('/villains', getAllVillains)
 
 app.get('/villains/:slug', getVillainBySlug)
 
-app.post('/', bodyParser.json(), saveNewVillain)
+app.post('/villains', bodyParser.json(), saveNewVillain)
 
 app.listen(1312, () => {
   console.log('Listening on port 1312...') // eslint-disable-line no-console
