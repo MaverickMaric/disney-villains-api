@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/MaverickMaric/disney-villains-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "eslint": "^7.14.0",
