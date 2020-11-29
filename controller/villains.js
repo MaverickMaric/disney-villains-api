@@ -7,6 +7,19 @@ const getAllVillains = async (request, response) => {
     }
   })
 
+  /*  {
+    attributes: {
+      exclude: ['id', 'createdAt', 'updatedAt', 'deletedAt']
+    }
+  } 
+  
+  Removes displays for id, etc., w/o excluding them from default settings 
+  (will still display in POST requests)
+
+  Initially added to the models/villains.js as an object between villains 
+  object and paranoid attribute to set defaults.
+  */
+
   return response.send(villains)
 }
 
